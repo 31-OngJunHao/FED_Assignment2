@@ -1,5 +1,8 @@
 /*
+Credits for the API
 https://documenter.getpostman.com/view/10724784/SzYXWz3x
+
+Data for the API
 https://www.sciencedirect.com/science/article/pii/S1473309920301201?via%3Dihub
 */
 
@@ -23,16 +26,16 @@ function getSelectedCountry() {
             return response.json();
         })
         .then(function(data) {
-            //Log API status and retrieve PSI data
-            //console.log(data.data[0]);
+            //Retrieve Covid-19 data
+            //console.log(data.data[0]); //Entire data
             var content_cases = data.data[0].confirmed;
             var content_deaths = data.data[0].deaths;
 
-            //Update HTML with Covid data
+        //Update HTML with Covid-19 data
         document.getElementById("cases").innerHTML = content_cases;
         document.getElementById("deaths").innerHTML = content_deaths;
 
-        //Store PSI data in local storage
+        //Store Covid-19 data in local storage
         localStorage.setItem("cases", JSON.stringify(content_cases));
         localStorage.setItem("deaths", JSON.stringify(content_deaths));
         })
