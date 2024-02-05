@@ -45,9 +45,3 @@ function getSelectedCountry() {
             console.error("Error during fetch operation:", error);
           });
 }
-
-
-
-
-
-
