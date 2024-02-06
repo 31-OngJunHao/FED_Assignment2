@@ -68,9 +68,9 @@
     </section>
 
     <!--Displays dropdown list of country-->>
-    <section>
-        <h2>Select a Country</h2>
-        <label for="countryDropdown">Choose a country:</label>
+    <section class="graphicalrepresentation">
+        <h1 class="titlegraph">Select a country</h1>
+        <label for="countryDropdown"> Choose a country </label>
         <select id="countryDropdown">
             <option value="AFG">Afghanistan</option>
             <option value="AUS">Australia</option>
@@ -90,17 +90,35 @@
             <option value="MYS">Malaysia</option>
             <option value="SGP">Singapore</option>
         </select>
-        <button onclick="getSelectedCountry()">Get Country</button>
+        <button onclick="getSelectedCountry()"> Select </button>
         <!--Displays the data-->
         <p id = "cases">Cases number</p>
         <p id = "deaths">Deaths number</p>
     </section>
+    <!--Video explaining origins of Covid-19-->    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/isrrSE_d9EM?si=9-18yMihnqSqO9fq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <!--Dashboard for Covid-19 information from https://github.com/CSSEGISandData/COVID-19-->
     <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="COVID-19" src="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"></iframe></div>
 
-    <!--Video explaining origins of Covid-19-->    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/isrrSE_d9EM?si=9-18yMihnqSqO9fq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <footer>
+        <div class="main-footer-container">
+            <h2 class="main-footer-heading"> Contacts </h2>
+            <h3>=== For more information do approach us at ===</h3>
+
+            <div class="scratch-container">
+                <div class="scratch-card">
+                    <div class="information">
+                        Phone Contact: +65 81234567
+                        Email: BlahBlah@gmail.com
+                    </div>
+                </div>
+                <canvas id="scratch-card01"></canvas>
+            </div>
+
+
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
