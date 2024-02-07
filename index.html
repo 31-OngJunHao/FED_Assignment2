@@ -6,8 +6,29 @@
   <meta name="viewport" content="width=device-width">
   <title>COVID-19</title>
   <link href="styles.css" rel="stylesheet" type="text/css" />
-</head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
 
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['State', 'Number'],
+        ['Deaths', id = "deaths"],
+        ['Recoveries', id = "recovered"],
+      ]);
+
+      var options = {
+        title: 'Covid-19'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
 <body>
     <header>
         <!--Navigate to links within the page-->
@@ -92,6 +113,16 @@
         </select>
         <button onclick="getSelectedCountry()"> Select </button>
         <!--Displays the data-->
+        <div class="flex-container-information">
+        <div id="piechart" style="width: 500px; height: 300px;"></div>
+        <div class="information">
+            COVID-19 is an infectious disease caused by the SARS-CoV-2 virus. Transmission of the virus 
+            occurs primarily through the respiratory droplets of infected people.COVID-19 affects different people in different ways. 
+            While some people may not experience any symptoms at all, 
+            others may experience Acute Respiratory Infection (ARI) 
+            symptoms such as fever, cough, runny nose, sore throat, loss of taste or smell.
+        </div>
+        </div>
         <p id = "cases">Cases number</p>
         <p id = "deaths">Deaths number</p>
     </section>

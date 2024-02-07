@@ -251,3 +251,17 @@ canvas{
   right: 10px;
   cursor: pointer;
 }
+#piechart{
+  border-radius: 20%;
+}
+.flex-container-information{
+  display: flex;
+  flex-flow: row;
+  margin: 40px;
+}
+.information{
+  text-align: left;
+  margin-left: 20px;
+  color: #ffffff;
+  font-size: 20px;
+}

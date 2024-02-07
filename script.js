@@ -30,14 +30,17 @@ function getSelectedCountry() {
             //console.log(data.data[0]); //Entire data
             var content_cases = data.data[0].confirmed;
             var content_deaths = data.data[0].deaths;
+            var content_recovered = data.data[0].recovered;
 
         //Update HTML with Covid-19 data
         document.getElementById("cases").innerHTML = content_cases;
         document.getElementById("deaths").innerHTML = content_deaths;
+        document.getElementById("recovered").innerHTML = content_recovered;
 
         //Store Covid-19 data in local storage
         localStorage.setItem("cases", JSON.stringify(content_cases));
         localStorage.setItem("deaths", JSON.stringify(content_deaths));
+        localStorage.setItem("recovered", json.stringify(content_recovered));
         })
         
         .catch(function(error) {
