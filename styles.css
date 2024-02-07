@@ -220,11 +220,6 @@ canvas{
   position: absolute;
   cursor: grabbing;
 }
-/*#scratch-card01{
-  width: 100%;
-  height: 100px;
-}*/
-
 #overlay {
   display: none;
   position: fixed;
@@ -277,4 +272,15 @@ canvas{
 .video-description{
   font-size: 15px;
   color: #ffffff;
+}
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }

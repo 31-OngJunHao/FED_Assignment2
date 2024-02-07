@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -29,160 +29,163 @@
     }
   </script>
 </head>
+
 <body>
-    <header>
-        <!--Navigate to links within the page-->
-        <a href="#index.html" class="logo">COVID-19</a>
-        <ul>
-            <li><a href="#">News</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Data</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="javascript:void(0);" onclick="openForm()">Sign Up</a></li>
-        </ul>
-    </header>
+  <header>
+    <!--Navigate to links within the page-->
+    <a href="#index.html" class="logo">COVID-19</a>
+    <ul>
+      <li><a href="#">News</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Data</a></li>
+      <li><a href="#">Contacts</a></li>
+      <li><a href="javascript:void(0);" onclick="openForm()">Sign Up</a></li>
+    </ul>
+  </header>
 
-    <!--Make globe object-->
-    <section class="banner"></section>
-    <script type="text/javascript">
-      window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0)
-      })
-    </script>
+  <!--Make globe object-->
+  <section class="banner"></section>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+  <section class="hidden">
     <section class="globe">
-        <div class="earth"></div>
-        <div class= "circle">
-            <span style="--i:1;">L</span>
-            <span style="--i:2;">I</span>
-            <span style="--i:3;">F</span>
-            <span style="--i:4;">E</span>
-            <span style="--i:5;">-</span>
-            <span style="--i:6;">W</span>
-            <span style="--i:7;">I</span>
-            <span style="--i:8;">T</span>
-            <span style="--i:9;">H</span>
-            <span style="--i:10;">-</span>
-            <span style="--i:11;">C</span>
-            <span style="--i:12;">O</span>
-            <span style="--i:13;">V</span>
-            <span style="--i:14;">I</span>
-            <span style="--i:15;">D</span>
-            <span style="--i:16;">1</span>
-            <span style="--i:17;">9</span>
-            <span style="--i:18;">-</span>
-            <span style="--i:19;">W</span>
-            <span style="--i:20;">O</span>
-            <span style="--i:21;">R</span>
-            <span style="--i:22;">L</span>
-            <span style="--i:23;">D</span>
-            <span style="--i:24;">W</span>
-            <span style="--i:25;">I</span>
-            <span style="--i:26;">D</span>
-            <span style="--i:27;">E</span>
-            <span style="--i:28;">-</span>
-            <span style="--i:29;">N</span>
-            <span style="--i:30;">O</span>
-            <span style="--i:31;">W</span>
-            <span style="--i:32;">|</span>
-        </div>
+      <div class="earth"></div>
+      <div class="circle">
+        <span style="--i:1;">L</span>
+        <span style="--i:2;">I</span>
+        <span style="--i:3;">F</span>
+        <span style="--i:4;">E</span>
+        <span style="--i:5;">-</span>
+        <span style="--i:6;">W</span>
+        <span style="--i:7;">I</span>
+        <span style="--i:8;">T</span>
+        <span style="--i:9;">H</span>
+        <span style="--i:10;">-</span>
+        <span style="--i:11;">C</span>
+        <span style="--i:12;">O</span>
+        <span style="--i:13;">V</span>
+        <span style="--i:14;">I</span>
+        <span style="--i:15;">D</span>
+        <span style="--i:16;">1</span>
+        <span style="--i:17;">9</span>
+        <span style="--i:18;">-</span>
+        <span style="--i:19;">W</span>
+        <span style="--i:20;">O</span>
+        <span style="--i:21;">R</span>
+        <span style="--i:22;">L</span>
+        <span style="--i:23;">D</span>
+        <span style="--i:24;">W</span>
+        <span style="--i:25;">I</span>
+        <span style="--i:26;">D</span>
+        <span style="--i:27;">E</span>
+        <span style="--i:28;">-</span>
+        <span style="--i:29;">N</span>
+        <span style="--i:30;">O</span>
+        <span style="--i:31;">W</span>
+        <span style="--i:32;">|</span>
+      </div>
     </section>
-
-    <!--Displays dropdown list of country-->>
-    <section class="graphicalrepresentation">
-        <h1 class="titlegraph">Select a country</h1>
-        <label for="countryDropdown"> Choose a country </label>
-        <select id="countryDropdown">
-            <option value="AFG">Afghanistan</option>
-            <option value="AUS">Australia</option>
-            <option value="AUT">Austria</option>
-            <option value="BRA">Brazil</option>
-            <option value="BRN">Brunei</option>
-            <option value="CAN">Canada</option>
-            <option value="CHN">China</option>
-            <option value="COL">Columbia</option>
-            <option value="IDN">Indonesia</option>
-            <option value="IND">India</option>
-            <option value="JPN">Japan</option>
-            <option value="RUS">Russia</option>
-            <option value="KOR">South Korea</option>
-            <option value="GBR">United Kingdom</option>
-            <option value="USA">United States of America</option>
-            <option value="MYS">Malaysia</option>
-            <option value="SGP">Singapore</option>
-        </select>
-        <button onclick="getSelectedCountry()"> Select </button>
-        <!--Displays the data-->
-        <div class="flex-container-information">
-        <div id="piechart" style="width: 500px; height: 300px;"></div>
-        <div class="information">
-            COVID-19 is an infectious disease caused by the SARS-CoV-2 virus. Transmission of the virus 
-            occurs primarily through the respiratory droplets of infected people.COVID-19 affects different people in different ways. 
-            While some people may not experience any symptoms at all, 
-            others may experience Acute Respiratory Infection (ARI) 
-            symptoms such as fever, cough, runny nose, sore throat, loss of taste or smell.
-        </div>
-        </div>
-        <p id = "cases">Cases number</p>
-        <p id = "deaths">Deaths number</p>
-    </section>
-
-    <!-- Overlay container -->
-    <div id="overlay">
-        <!-- Form container -->
-        <div id="form-container">
-            <span id="close-btn" onclick="closeForm()">&#10006;</span>
-            <h2>Enter your information</h2>
-            <!-- Sign-up form -->
-            <form id="signUpForm" onsubmit="submitSignUpForm(); return false;">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <!--Video explaining origins of Covid-19-->
-<section class="video-container">
-    <div class="video-section-title">== The origins of COVID-19 ==</div>
+  </section>
+  <section class="graphicalrepresentation">
+    <h1 class="titlegraph">Select a country</h1>
+    <label for="countryDropdown"> Choose a country </label>
+    <select id="countryDropdown">
+      <option value="AFG">Afghanistan</option>
+      <option value="AUS">Australia</option>
+      <option value="AUT">Austria</option>
+      <option value="BRA">Brazil</option>
+      <option value="BRN">Brunei</option>
+      <option value="CAN">Canada</option>
+      <option value="CHN">China</option>
+      <option value="COL">Columbia</option>
+      <option value="IDN">Indonesia</option>
+      <option value="IND">India</option>
+      <option value="JPN">Japan</option>
+      <option value="RUS">Russia</option>
+      <option value="KOR">South Korea</option>
+      <option value="GBR">United Kingdom</option>
+      <option value="USA">United States of America</option>
+      <option value="MYS">Malaysia</option>
+      <option value="SGP">Singapore</option>
+    </select>
+    <button onclick="getSelectedCountry()"> Select </button>
+    <!--Displays the data-->
     <div class="flex-container-information">
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/isrrSE_d9EM?si=9-18yMihnqSqO9fq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="information">
-            The first known outbreak (the 2019 - 2020 COVID-19 outbreak in mainland China) started in Wuhan, Hubei, China, in December 2019. 
-            Many early cases were linked to people who had visited the Huanan Seafood Wholesale Market there, but it is possible that human-to-human transmission began earlier.
-            The scientific consensus is that the virus is most likely of a zoonotic origin, from bats or another closely related mammal. 
-            Controversies about the origins of the virus, including the lab leak theory, heightened geopolitical divisions, notably between the United States and China.
-            The earliest known infected person fell ill on 1 December 2019. That individual did not have a connection with the later wet market cluster.
-            However, an earlier case may have occurred on 17 November. Two-thirds of the initial case cluster were linked with the market.
-        </div>
+      <section class="hidden">
+      <div id="piechart" style="width: 500px; height: 300px;"></div>
+      <div class="information">
+        COVID-19 is an infectious disease caused by the SARS-CoV-2 virus. Transmission of the virus
+        occurs primarily through the respiratory droplets of infected people.COVID-19 affects different people in
+        different ways.
+        While some people may not experience any symptoms at all,
+        others may experience Acute Respiratory Infection (ARI)
+        symptoms such as fever, cough, runny nose, sore throat, loss of taste or smell.
+      </div>
+        </section>
     </div>
-</section>  
-    <!--Dashboard for Covid-19 information from https://github.com/CSSEGISandData/COVID-19-->
-    <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="COVID-19" src="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"></iframe></div>
-    <footer>
-        <div class="main-footer-container">
-            <h2 class="main-footer-heading"> Contacts </h2>
-            <h3>=== For more information do approach us at ===</h3>
+    <p id="cases">Cases number</p>
+    <p id="deaths">Deaths number</p>
+  </section>
+  <!-- Overlay container -->
+  <div id="overlay">
+      <!-- Form container -->
+      <div id="form-container">
+          <span id="close-btn" onclick="closeForm()">&#10006;</span>
+          <h2>Enter your information</h2>
+          <!-- Sign-up form -->
+          <form id="signUpForm" onsubmit="submitSignUpForm(); return false;">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required>
+              <button type="submit">Submit</button>
+          </form>
+      </div>
+  </div>
+  <!--Video explaining origins of Covid-19-->
+  <section class="video-container">
+    <section class="hidden">
+      <div class="video-section-title">== The origins of COVID-19 ==</div>
+      <div class="flex-container-information">
+          <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/isrrSE_d9EM?si=9-18yMihnqSqO9fq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="information">
+              The first known outbreak (the 2019 - 2020 COVID-19 outbreak in mainland China) started in Wuhan, Hubei, China, in December 2019. 
+              Many early cases were linked to people who had visited the Huanan Seafood Wholesale Market there, but it is possible that human-to-human transmission began earlier.
+              The scientific consensus is that the virus is most likely of a zoonotic origin, from bats or another closely related mammal. 
+              Controversies about the origins of the virus, including the lab leak theory, heightened geopolitical divisions, notably between the United States and China.
+              The earliest known infected person fell ill on 1 December 2019. That individual did not have a connection with the later wet market cluster.
+              However, an earlier case may have occurred on 17 November. Two-thirds of the initial case cluster were linked with the market.
+          </div>
+      </div>
+      </section> 
+  </section>  
+  <!--Dashboard for Covid-19 information from https://github.com/CSSEGISandData/COVID-19-->
+  <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="COVID-19" src="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"></iframe></div>
+  <footer>
+      <div class="main-footer-container">
+          <h2 class="main-footer-heading"> Contacts </h2>
+          <h3>=== For more information do approach us at ===</h3>
 
-            <div class="scratch-container">
-                <div class="scratch-card">
-                    <div class="information">
-                        Phone Contact: +65 81234567
-                        Email: BlahBlah@gmail.com
-                    </div>
-                </div>
-                <canvas id="scratch-card01"></canvas>
-            </div>
+          <div class="scratch-container">
+              <div class="scratch-card">
+                  <div class="information">
+                      Phone Contact: +65 81234567
+                      Email: BlahBlah@gmail.com
+                  </div>
+              </div>
+              <canvas id="scratch-card01"></canvas>
+          </div>
 
 
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+      </div>
+  </footer>
+  <script defer src="script.js"></script>
 </body>
 
 </html>
