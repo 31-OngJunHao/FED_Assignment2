@@ -103,7 +103,7 @@ const observer = new IntersectionObserver((enteries) => {
   })
   init()
   };
-  createScratchCard("scratch-card01", "white")
+  createScratchCard("scratch-card01", "green")
   
   //Pop up sign up form
   function submitSignUpForm() {
