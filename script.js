@@ -52,12 +52,15 @@ const observer = new IntersectionObserver((enteries) => {
           //Store Covid-19 data in local storage
           localStorage.setItem("cases", JSON.stringify(content_cases));
           localStorage.setItem("deaths", JSON.stringify(content_deaths));
+
+          // Call drawChart function after updating data  
+          drawChart();
           })
-  
           .catch(function(error) {
               //Handle errors during the fetch operation
               console.error("Error during fetch operation:", error);
             });
+        
   }
   //ScratchCard
   const createScratchCard = (canvasId, color) => {

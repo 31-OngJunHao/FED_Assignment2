@@ -12,11 +12,13 @@
     google.charts.setOnLoadCallback(drawChart);
 
     function drawChart() {
-
+      // Get data from localStorage
+      var content_cases = JSON.parse(localStorage.getItem("cases"));
+      var content_deaths = JSON.parse(localStorage.getItem("deaths"));
       var data = google.visualization.arrayToDataTable([
         ['State', 'Number'],
-        ['Deaths', 5],
-        ['Recoveries', 2],
+        ['Cases', content_cases],
+        ['Deaths', content_deaths],
       ]);
 
       var options = {
