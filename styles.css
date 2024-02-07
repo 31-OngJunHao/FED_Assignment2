@@ -183,6 +183,10 @@ label{
 .main-footer-container{
   padding: 24px 16px;
   background-color: #000;
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera, and Firefox */
 }
 .main-footer-heading{
   border-left: 4px solid #ff4460;
@@ -198,6 +202,7 @@ label{
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
+  
 }
 .scratch-container{
   width: 300px;
@@ -258,7 +263,7 @@ canvas{
 .information{
   text-align: left;
   margin-left: 20px;
-  color: #ffffff;
+  color: #000000;
   font-size: 20px;
 }
 .video-container{
@@ -283,4 +288,10 @@ canvas{
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+.information-video{
+  text-align: left;
+  margin-left: 20px;
+  color: #ffffff;
+  font-size: 20px;
 }
