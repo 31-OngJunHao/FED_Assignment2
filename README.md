@@ -1,29 +1,33 @@
 # Life With COVID
-This project is to give useful information to users who want to find out more on COVID, its origins and how we can live with it in a visually appealing way.
+Life With COVID is a project aimed at providing users with valuable information about    COVID, its origins and practical ways to navigate life during the pandemic.
 
 ## Design Process
-Our websites provides useful information such as links to certified websites, useful information, helpful hotlines for any queries, to give users not only a basic understanding of covid, but also a chance to find out more information if they want to.
+Our website is designed to offer users a comprehensive understanding of COVID-19, including links to certified websites, essential information, and helpful hotlines for queries. The design aims to provide both basic knowledge and the opportunity for users to explore further if desired.
 
 ### User Stories
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
+As a user, I want to access certified information about COVID-19.
+As a user, I want to find useful and verified resources for understanding the origins of COVID-19.
+As a user, I want access to hotlines for any queries related to COVID-19.
 
 Wireframe link: https://xd.adobe.com/view/2bb78b2c-ae54-4984-827a-5c8e39e11fb2-7ee4/
 
 ## Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+The project features sections for COVID-19 data visualization using a Covid-19 API, a dropdown list to select a country for specific data, a dashboard and an informative footer with contact details.
 
 ## Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+Data Visualization: Users can select a country from the dropdown list to view COVID-19 data for a certain country in a pie-chart detailing confirmed cases and deaths.
+Dashboard: Visual Dashboard to track Covid-19 in real time.
+Informative Footer: Contact details are provided in the footer for users seeking more information.
 
 ### Features Left to Implement
-Another feature idea
+User Authentication: Implement a user authentication system to personalize the experience and track user interactions.
+Interactive Globe: Make globe interactive for a dynamic representation of the world against COVID-19 data.
 
 ### Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+HTML: The project utilizes HTML for structuring the web pages.
+CSS: CSS is employed for styling and layout.
+JavaScript: JavaScript is used for dynamic content and user interactions.
+Adobe XD: Adobe XD was used for wireframing and design planning.
 
 ### JQuery
 The project uses JQuery to simplify DOM manipulation.
@@ -31,17 +35,18 @@ Testing
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 ## Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Go to the "Contact Us" page.
+Try to submit the empty form and verify the appearance of an error message about the required fields.
+Attempt to submit the form with an invalid email address and confirm the display of a relevant error message.
+Submit the form with all inputs valid and verify the appearance of a success message.
+The project has been tested on various browsers and screen sizes to ensure a consistent and responsive user experience.
 
 ## Credits
+Credits for the API
+https://documenter.getpostman.com/view/10724784/SzYXWz3x
+
+Data for the API
+https://www.sciencedirect.com/science/article/pii/S1473309920301201?via%3Dihub
 
 ## Content
 The text for section Y was copied from the Wikipedia article Z
