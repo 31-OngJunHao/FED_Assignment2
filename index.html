@@ -15,12 +15,12 @@
 
       var data = google.visualization.arrayToDataTable([
         ['State', 'Number'],
-        ['Deaths', id = "deaths"],
-        ['Recoveries', id = "recovered"],
+        ['Deaths', 5],
+        ['Recoveries', 2],
       ]);
 
       var options = {
-        title: 'Covid-19'
+        title: 'Country: '
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -137,21 +137,32 @@
             <form id="signUpForm" onsubmit="submitSignUpForm(); return false;">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                <br>
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
-                <br>
                 <button type="submit">Submit</button>
             </form>
         </div>
     </div>
 
-    <!--Video explaining origins of Covid-19-->    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/isrrSE_d9EM?si=9-18yMihnqSqO9fq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+    <!--Video explaining origins of Covid-19-->
+<section class="video-container">
+    <div class="video-section-title">== The origins of COVID-19 ==</div>
+    <div class="flex-container-information">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/isrrSE_d9EM?si=9-18yMihnqSqO9fq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="information">
+            The first known outbreak (the 2019 - 2020 COVID-19 outbreak in mainland China) started in Wuhan, Hubei, China, in December 2019. 
+            Many early cases were linked to people who had visited the Huanan Seafood Wholesale Market there, but it is possible that human-to-human transmission began earlier.
+            The scientific consensus is that the virus is most likely of a zoonotic origin, from bats or another closely related mammal. 
+            Controversies about the origins of the virus, including the lab leak theory, heightened geopolitical divisions, notably between the United States and China.
+            The earliest known infected person fell ill on 1 December 2019. That individual did not have a connection with the later wet market cluster.
+            However, an earlier case may have occurred on 17 November. Two-thirds of the initial case cluster were linked with the market.
+        </div>
+    </div>
+</section>  
     <!--Dashboard for Covid-19 information from https://github.com/CSSEGISandData/COVID-19-->
     <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="COVID-19" src="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"></iframe></div>
-
     <footer>
         <div class="main-footer-container">
             <h2 class="main-footer-heading"> Contacts </h2>
