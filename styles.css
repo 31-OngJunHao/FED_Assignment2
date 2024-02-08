@@ -295,3 +295,75 @@ canvas{
   color: #ffffff;
   font-size: 20px;
 }
+/*Articles*/
+.boxParent{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+}
+.boxCenter{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border:1px solid #000000;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #808080;
+}
+.boxItem { 
+  display: inline-block;
+  border: 1px solid black;
+  padding: 1em;
+  position: absolute;
+  background: #000000;
+  max-width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+.boxItem[data-boxItem-index]:after{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  height: 1px;
+  border-top: 1px solid #ddff00;
+}
+.boxItem[data-boxItem-index='1']{
+  top: 40%;
+  left: 10%;
+}
+.boxItem[data-boxItem-index='1']:after{
+  width: 600px;
+  transform: rotate(340deg);
+  top: 190px;
+}
+.boxItem[data-boxItem-index='2']{
+  top: 25%;
+  left: 70%;
+}
+.boxItem[data-boxItem-index='2']:after{
+  width: 350px;
+  transform: rotate(150deg);
+  top: 120px;
+  left: -200px;
+}
+.boxItem[data-boxItem-index='3']{
+  top: 85%;
+  left: 67%;
+}
+.boxItem[data-boxItem-index='3']:after{
+  width: 300px;
+  transform: rotate(23deg);
+  top: 100px;
+  left: -180px;
+}
+.block{
+  display: block;
+}
