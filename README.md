@@ -12,6 +12,8 @@ Our website is designed to offer users a comprehensive understanding of COVID-19
 
 Wireframe link: https://xd.adobe.com/view/2bb78b2c-ae54-4984-827a-5c8e39e11fb2-7ee4/
 
+Github pages link: https://31-ongjunhao.github.io/FED_Assignment2/
+
 ## Features
 The project features sections for COVID-19 data visualization using a Covid-19 API, a dropdown list to select a country for specific data, a dashboard and an informative footer with contact details.
 
