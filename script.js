@@ -162,25 +162,3 @@ function closethanks(){
 }
 
 document.getElementById("open-form-link").addEventListener("click", openForm);
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-//Draw Pie Chart
-function drawChart() {
-    // Get data from localStorage
-    var content_cases = JSON.parse(localStorage.getItem("cases"));
-    var content_deaths = JSON.parse(localStorage.getItem("deaths"));
-    var data = google.visualization.arrayToDataTable([
-    ['State', 'Number'],
-    ['Cases', content_cases],
-    ['Deaths', content_deaths],
-    ]);
-
-    var options = {
-    title: 'Country: '
-    };
-
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-    chart.draw(data, options);
-}
