@@ -153,6 +153,11 @@ const observer = new IntersectionObserver((enteries) => {
   
   function closeForm() {
       document.getElementById("overlay").style.display = "none";
+      document.getElementById("overlay2").style.display = "flex";
+      setTimeout(closethanks,3000);
+  }
+  function closethanks(){
+      document.getElementById("overlay2").style.display = "none";
   }
   
   document.getElementById("open-form-link").addEventListener("click", openForm);
