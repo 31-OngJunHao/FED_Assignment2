@@ -1,5 +1,5 @@
 # Life With COVID
-Life With COVID is a project aimed at providing users with valuable information about    COVID, its origins and practical ways to navigate life during the pandemic.
+Life With COVID is a project aimed at providing users with valuable information about COVID, its origins and practical ways to navigate life during the pandemic.
 
 ## Design Process
 Our website is designed to offer users a comprehensive understanding of COVID-19, including links to certified websites, essential information, and helpful hotlines for queries. The design aims to provide both basic knowledge and the opportunity for users to explore further if desired.
@@ -8,7 +8,7 @@ Our website is designed to offer users a comprehensive understanding of COVID-19
 As a user, I want to access certified information about COVID-19.
 As a user, I want to find useful and verified resources for understanding the origins of COVID-19.
 As a user, I want access to hotlines for any queries related to COVID-19.
-As a user, I want to see useful data on the COVID Situation currently affecting the country I live in.
+As a user, I want to see useful data on the COVID Situation in other countries.
 
 Wireframe link: https://xd.adobe.com/view/2bb78b2c-ae54-4984-827a-5c8e39e11fb2-7ee4/
 
@@ -17,14 +17,15 @@ The project features sections for COVID-19 data visualization using a Covid-19 A
 
 
 ## Existing Features
-Data Visualization: Users can select a country from the dropdown list to view COVID-19 data for a certain country in a pie-chart detailing confirmed cases and deaths.
-Animations: Animation after submit signup form
-Useful Links: A globe that rotates and has useful news articles for users.
-Useful contacts: A scratch card that displays useful contact information.
-Dashboard: Visual Dashboard to track Covid-19 in real time.
-Informative Footer: Contact details are provided in the footer for users seeking more information.
-Dissapearing header when scoll all the way up
-Google charts that display information from API
+(Jayme)Data Visualization: Users can select a country from the dropdown list to view COVID-19 data for a certain country in a pie-chart detailing confirmed cases and deaths.
+(JunHao & Jayme)Animations: Animation after submit signup form
+(JunHao)Useful Links: A globe that rotates and has useful news articles for users.
+(JunHao)Useful contacts: A scratch card that displays useful contact information.
+(Jayme)Dashboard: Visual Dashboard to track Covid-19 in real time.
+(JunHao)Informative Footer: Contact details are provided in the footer for users seeking more information.
+(JunHao)Dissapearing header: header dissapears when scroll all the way up to make website more presentable
+(JunHao & Jayme)Google charts that display information from API
+
 
 
 ### Features Left to Implement
@@ -81,3 +82,10 @@ I received inspiration for Globe inspiration from: https://theyearofgreta.com/
 I received inspiration for Scratch card from: https://codepen.io/Totati/pen/pPXrJV
 I received inspiration for Dissapearing header from: https://www.netflix.com/browse
 I received inspiration for charts from: https://developers.google.com/chart
+
+## How to Run Our Project
+1. Register for github account
+2. Download Microsoft VS code
+3. Fork our Repository and save it onto your device
+4. Open the saved file in VS Code
+5. Happy editing!!
