@@ -17,25 +17,26 @@ The project features sections for COVID-19 data visualization using a Covid-19 A
 
 ## Existing Features
 * (Jayme)Data Visualization: Users can select a country from the dropdown list to view COVID-19 data for a certain country in a pie-chart detailing confirmed cases and deaths.
-* (JunHao & Jayme)Lottie Animations: Animation appears before and after submitting signup form.
+* (JunHao & Jayme)Lottie Animations: Animation appears after submitting signup form.
 * (JunHao)Useful Links: A globe that rotates and has useful news articles for users.
 * (JunHao)Useful contacts: A scratch card that displays useful contact information.
 * (Jayme)Dashboard: Visual Dashboard to track Covid-19 in real time.
 * (JunHao)Informative Footer: Contact details are provided in the footer for users seeking more information.
 * (JunHao)Disappearing header: header disappears when scroll all the way up to make website more presentable
 * (JunHao & Jayme)Google charts that display information from API
+* (Jayme)Pop Up Sign Up form: Appears when Sign Up button is clicked
 
 
 ### Features Left to Implement
 * User Authentication: Implement a user authentication system to personalize the experience and track user interactions.
-* Interactive Globe: Make globe interactive for a dynamic representation of the world against COVID-19 * data.
+* Interactive Globe: Make globe interactive for a dynamic representation of the world against COVID-19 data.
 
 ### Technologies Used
 * HTML: The project utilizes HTML for structuring the web pages.
 * CSS: CSS is employed for styling and layout.
 * JavaScript: JavaScript is used for dynamic content and user interactions.
 * Adobe XD: Adobe XD was used for wireframing and design planning.
-* JQuery:  to simplify DOM manipulation.
+* JQuery: to simplify DOM manipulation.
 
 ## Testing
 ### Sign Up form:
@@ -50,7 +51,6 @@ https://documenter.getpostman.com/view/10724784/SzYXWz3x
 
 Data for the API
 https://www.sciencedirect.com/science/article/pii/S1473309920301201?via%3Dihub
-
 
 ## Content
 Video information text was derived from:
